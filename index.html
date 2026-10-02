@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ariel Zilinski | Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f5ef;
+      color: #14213d;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      border-bottom: 1px solid #ddd8cd;
+      position: sticky;
+      top: 0;
+      background: #f7f5ef;
+    }
+    .logo { font-size: 24px; font-weight: bold; }
+    .logo span { color: #ff6542; }
+    nav a {
+      color: #14213d;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 22px;
+    }
+    nav a:hover { color: #ff6542; }
+    section { padding: 85px 8%; }
+    .hero {
+      min-height: 580px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: #14213d;
+      color: white;
+    }
+    .eyebrow {
+      color: #ff9b82;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 1.5px;
+    }
+    h1 {
+      font-size: clamp(45px, 8vw, 95px);
+      line-height: .95;
+      margin: 18px 0;
+    }
+    h1 em { color: #ff6542; }
+    .hero p {
+      max-width: 720px;
+      color: #d9e1ef;
+      font-size: 19px;
+    }
+    .button {
+      display: inline-block;
+      width: fit-content;
+      margin-top: 20px;
+      padding: 14px 22px;
+      background: #ff6542;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h2 {
+      font-size: clamp(32px, 5vw, 55px);
+      line-height: 1.1;
+      margin-top: 0;
+    }
+    .intro {
+      max-width: 800px;
+      font-size: 18px;
+      color: #4d586b;
+    }
+    .label {
+      color: #ff6542;
+      font-weight: bold;
+      font-size: 13px;
+      letter-spacing: 1px;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 35px;
+    }
+    .card {
+      padding: 25px;
+      background: white;
+      border: 1px solid #ddd8cd;
+    }
+    .card h3 { margin-top: 0; font-size: 22px; }
+    ul { padding-left: 20px; color: #4d586b; }
+    .project-card {
+      padding: 28px;
+      background: white;
+      border: 1px solid #ddd8cd;
+    }
+    .project-card:first-child {
+      background: #ff6542;
+      border-color: #ff6542;
+      color: #14213d;
+    }
+    .project-card p { color: #4d586b; }
+    .project-card:first-child p { color: #14213d; }
+    .tag {
+      display: inline-block;
+      margin: 6px 4px 0 0;
+      padding: 5px 8px;
+      border: 1px solid currentColor;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    footer {
+      padding: 55px 8%;
+      background: #14213d;
+      color: white;
+      text-align: center;
+    }
+    footer h2 { margin-bottom: 8px; }
+    @media (max-width: 750px) {
+      .skills, .projects { grid-template-columns: 1fr; }
+      header { padding: 18px 6%; }
+      nav a { margin-left: 10px; font-size: 14px; }
+      section { padding: 65px 6%; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">AZ<span>.</span></div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">PHOENIX FINANCIAL • RUTGERS BUSINESS SCHOOL • BAIT</div>
+    <h1>Client-focused.<br><em>Financially driven.</em></h1>
+    <p>I’m Ariel Zilinski, a Rutgers Business School BAIT student gaining hands-on experience at Phoenix Financial by building client relationships, understanding financial goals, and helping people make informed decisions.</p>
+    <a class="button" href="#projects">View My Experience ↓</a>
+  </section>
+
+  <section id="about">
+    <div class="label">01 / ABOUT ME</div>
+    <h2>Building a career in financial services, powered by business and technology.</h2>
+    <p class="intro">I am studying Business Analytics and Information Technology at Rutgers University–New Brunswick while gaining hands-on financial-services experience at Phoenix Financial. I work directly with clients and prospects, build relationships, and learn how to understand their financial goals and needs. My experience in billing support and inventory management has also taught me to be detail-oriented, professional, and people-focused.</p>
+  </section>
+
+  <section id="skills" style="background:#ece9df;">
+    <div class="label">02 / SKILLS</div>
+    <h2>What I bring to the table.</h2>
+
+    <div class="skills">
+      <div class="card">
+        <h3>Financial Services</h3>
+        <ul>
+          <li>Client and prospect outreach</li>
+          <li>Financial goals discovery</li>
+          <li>Relationship building</li>
+          <li>Sales communication</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Business & Data</h3>
+        <ul>
+          <li>Excel and data visualization</li>
+          <li>Cost and pricing analysis</li>
+          <li>Inventory tracking</li>
+          <li>Financial fundamentals</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Professional Strengths</h3>
+        <ul>
+          <li>Clear communication</li>
+          <li>Team collaboration</li>
+          <li>Leadership</li>
+          <li>Time management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="label">03 / EXPERIENCE & PROJECTS</div>
+    <h2>Selected work.</h2>
+
+    <div class="projects">
+      <div class="project-card">
+        <div class="label">01 / PHOENIX FINANCIAL</div>
+        <h3>Client Relationship Development</h3>
+        <p>Gaining firsthand financial-services experience by working with clients and prospects, building relationships, and learning how to identify each person’s financial goals and needs.</p>
+        <span class="tag">Financial Services</span>
+        <span class="tag">Client Relations</span>
+        <span class="tag">Sales</span>
+      </div>
+
+      <div class="project-card">
+        <div class="label">02 / BUSINESS ANALYSIS</div>
+        <h3>Inventory & Pricing Analysis</h3>
+        <p>Tracked product costs and inventory levels for a small business, using the findings to support better pricing decisions and smoother day-to-day operations.</p>
+        <span class="tag">Cost Tracking</span>
+        <span class="tag">Pricing</span>
+        <span class="tag">Operations</span>
+      </div>
+
+      <div class="project-card">
+        <div class="label">03 / CLIENT OPERATIONS</div>
+        <h3>Billing Support Workflow</h3>
+        <p>Supported customers with account questions, payment plans, and billing concerns in a medical-alert setting, making sensitive financial conversations clearer and easier to handle.</p>
+        <span class="tag">Client Service</span>
+        <span class="tag">Billing</span>
+        <span class="tag">Communication</span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <h2>Let’s connect.</h2>
+    <p>© 2026 Ariel Zilinski · Rutgers Business School</p>
+  </footer>
+
+</body>
+</html>
